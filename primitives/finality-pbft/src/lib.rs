@@ -17,7 +17,7 @@ use sp_std::{borrow::Cow, vec::Vec};
 #[cfg(feature = "std")]
 use log::debug;
 
-use grandpa::leader;
+use finality_grandpa::leader;
 
 /// Key type for PBFT module
 pub const KEY_TYPE: sp_core::crypto::KeyTypeId = sp_application_crypto::KeyTypeId(*b"pbft");

@@ -13,7 +13,7 @@ codec = { package = "parity-scale-codec", version = "3.0.0", default-features = 
 scale-info = { version = "2.0.0", default-features = false, features = [
   "derive",
 ] }
-grandpa = { package = "finality-grandpa", version = "0.15.0", default-features = false, features = [
+finality-grandpa = { git = "https://github.com/fky2015/finality-pbft", version = "0.15.0", default-features = false, features = [
   "derive-codec",
 ] }
 log = { version = "0.4", optional = true }
@@ -33,7 +33,7 @@ std = [
   "serde",
   "codec/std",
   "scale-info/std",
-  "grandpa/std",
+  "finality-grandpa/std",
   "sp-api/std",
   "sp-application-crypto/std",
   "sp-core/std",

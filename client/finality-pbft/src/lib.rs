@@ -995,7 +995,7 @@ impl<H, N> fmt::Display for CommandOrError<H, N> {
 }
 
 /// Errors that can occur while voting in PBFT.
-#[derive(Debug, thiserror::Error)]
+#[derive(Debug, Error)]
 pub enum Error {
 	/// An error within pbft.
 	#[error("pbft error: {0}")]

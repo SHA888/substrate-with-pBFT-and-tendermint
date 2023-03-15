@@ -12,7 +12,7 @@ use sp_finality_pbft::{AuthorityId, AuthorityList};
 use crate::SetId;
 
 /// Error type returned on operations on the `AuthoritySet`.
-#[derive(Debug, thiserror::Error)]
+#[derive(Debug, Error)]
 pub enum Error<N, E> {
 	#[error("Invalid authority set, either empty or with an authority weight set to 0.")]
 	InvalidAuthoritySet,
